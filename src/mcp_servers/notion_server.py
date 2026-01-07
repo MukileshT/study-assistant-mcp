@@ -1,0 +1,1 @@
+# MCP Notion server config 

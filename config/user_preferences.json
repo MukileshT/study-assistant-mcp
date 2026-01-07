@@ -1,0 +1,136 @@
+{
+  "user_profile": {
+    "learning_style": "visual",
+    "note_detail_level": "standard",
+    "study_pace": "moderate",
+    "preferred_study_times": ["morning", "evening"],
+    "timezone": "America/New_York"
+  },
+  
+  "note_formatting": {
+    "use_emojis": true,
+    "highlight_key_concepts": true,
+    "include_summaries": true,
+    "auto_generate_tags": true,
+    "color_code_subjects": true,
+    "create_table_of_contents": false,
+    "link_related_notes": true
+  },
+  
+  "learning_styles": {
+    "visual": {
+      "description": "Prefers diagrams, charts, and visual representations",
+      "formatting_preferences": {
+        "emphasize_diagrams": true,
+        "create_mind_maps": true,
+        "use_color_coding": true,
+        "add_visual_separators": true
+      },
+      "study_recommendations": [
+        "Create visual diagrams",
+        "Use color-coded notes",
+        "Draw concept maps",
+        "Watch educational videos"
+      ]
+    },
+    "auditory": {
+      "description": "Learns best through listening and verbal explanation",
+      "formatting_preferences": {
+        "detailed_explanations": true,
+        "conversational_tone": true,
+        "add_discussion_prompts": true,
+        "include_verbal_cues": true
+      },
+      "study_recommendations": [
+        "Read notes aloud",
+        "Discuss concepts with others",
+        "Record voice summaries",
+        "Listen to lectures"
+      ]
+    },
+    "kinesthetic": {
+      "description": "Learns through hands-on practice and physical activity",
+      "formatting_preferences": {
+        "include_exercises": true,
+        "add_practice_problems": true,
+        "create_action_items": true,
+        "hands_on_examples": true
+      },
+      "study_recommendations": [
+        "Work through practice problems",
+        "Build physical models",
+        "Create flashcards to manipulate",
+        "Take study breaks with movement"
+      ]
+    },
+    "reading_writing": {
+      "description": "Prefers written text and note-taking",
+      "formatting_preferences": {
+        "detailed_text": true,
+        "comprehensive_lists": true,
+        "written_summaries": true,
+        "extensive_definitions": true
+      },
+      "study_recommendations": [
+        "Rewrite notes in your own words",
+        "Create detailed outlines",
+        "Write practice essays",
+        "Make lists and definitions"
+      ]
+    }
+  },
+  
+  "subject_preferences": {
+    "mathematics": {
+      "priority": "high",
+      "difficulty": "medium",
+      "weekly_hours": 5,
+      "focus_areas": ["calculus", "algebra", "statistics"]
+    },
+    "computer_science": {
+      "priority": "high",
+      "difficulty": "medium",
+      "weekly_hours": 6,
+      "focus_areas": ["algorithms", "data structures", "systems"]
+    },
+    "physics": {
+      "priority": "medium",
+      "difficulty": "high",
+      "weekly_hours": 4,
+      "focus_areas": ["mechanics", "electromagnetism"]
+    },
+    "chemistry": {
+      "priority": "medium",
+      "difficulty": "medium",
+      "weekly_hours": 3,
+      "focus_areas": ["organic", "physical chemistry"]
+    }
+  },
+  
+  "planning_preferences": {
+    "study_session_duration": 45,
+    "break_duration": 10,
+    "max_daily_hours": 6,
+    "preferred_subjects_per_day": 3,
+    "review_frequency_days": 7,
+    "spaced_repetition": true,
+    "interleave_subjects": true,
+    "front_load_difficult_topics": true
+  },
+  
+  "notification_preferences": {
+    "daily_plan_reminder": true,
+    "reminder_time": "20:00",
+    "study_session_reminders": false,
+    "progress_updates": true,
+    "weekly_summary": true
+  },
+  
+  "notion_structure": {
+    "organize_by": "subject",
+    "page_hierarchy": ["course", "week", "day"],
+    "use_databases": true,
+    "create_dashboard": true,
+    "enable_relations": true
+  }
+}
