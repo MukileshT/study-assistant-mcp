@@ -50,6 +50,17 @@ def study_plans_database_schema():
 
 
 # -------------------------
+# Formatting helpers
+# -------------------------
+def redact_secret(value: str | None, visible: int = 4) -> str:
+    if not value:
+        return "[not set]"
+    if len(value) <= visible:
+        return "*" * len(value)
+    return f"{value[:visible]}...{value[-visible:]}"
+
+
+# -------------------------
 # Helpers
 # -------------------------
 async def test_connection(client: NotionClient) -> bool:
@@ -172,7 +183,7 @@ async def main():
     ))
 
     settings = get_settings()
-    console.print(f"\nAPI Key: {settings.notion_api_key[:20]}...")
+    console.print(f"\nAPI Key: {redact_secret(settings.notion_api_key)}")
     console.print(f"Notes Database ID: {settings.notion_database_id or '[yellow]Not set[/yellow]'}")
     console.print(f"Plans Database ID: {settings.notion_plans_database_id or '[yellow]Not set[/yellow]'}")
 
